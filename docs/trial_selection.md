@@ -130,6 +130,8 @@ Each trial should record:
 - `tempting_but_unwarranted_answer`,
 - `audit_notes`.
 
+These fields are for the core eval goal, not for mechanistic work. If we later study open-weight models with activation probes, we can add separate optional annotations such as claim spans, answer spans, or failure-mode tags. That should be treated as an extension layer on top of the base trial format rather than a reason to complicate trial authoring now.
+
 ## Scoring posture
 
 The auditor should not merely ask whether A was correct. It should ask whether each claim in A was warranted by T.

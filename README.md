@@ -152,3 +152,11 @@ The first milestone is a toy harness with:
 - a small set of hand-authored trials,
 - simple aggregate metrics, and
 - a report that shows where a blind answer crossed the epistemic boundary.
+
+## Longer-term extensions
+
+Once the foundational eval framework exists and we have a labeled set of epistemic-boundary failures, one promising extension is mechanistic analysis on local open-weight models.
+
+In that setting, the eval labels could be used to train simple probes over internal activations to test whether behaviors such as epistemic overreach, false certainty, or missed deferral are linearly detectable during generation. If useful, those probe scores could serve as research signals or alarms during local inference.
+
+This is explicitly a downstream extension, not a prerequisite for the core project. The primary goal remains to characterize whether a model crosses the epistemic boundary in the first place, using task design, blind answers, and privileged audits. Mechanistic probing should only be pursued after that foundation is in place.
